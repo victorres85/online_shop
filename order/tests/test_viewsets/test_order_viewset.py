@@ -2,8 +2,6 @@
 # -*- coding: utf-8 -*-
 
 import json
-import pdb
-
 
 from django.urls import reverse
 from rest_framework import status
