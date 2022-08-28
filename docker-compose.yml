@@ -1,19 +1,9 @@
 version: '3.9'
 
 services:
-  db:
-    image: postgres
-    ports:
-      - 5432:5432
-    volumes:
-      - pgdata:/var/lib/postgresql/data
-    environment:
-      - POSTGRES_USER=bookstore_dev
-      - POSTGRES_PASSWORD=bookstore_dev
-      - POSTGRES_DB=bookstore_dev_db
-
   web:
     build: .
+    container_name: django
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
       - app_data:/usr/src/app/
@@ -22,7 +12,16 @@ services:
     env_file:
       - ./env.dev
     depends_on:
-      - db
+      - pgdb
+  pgdb:
+    image: postgres
+    container_name: pgdb
+    environment:
+      - POSTGRES_USER=bookstore_dev
+      - POSTGRES_PASSWORD=bookstore_dev
+      - POSTGRES_DB=bookstore_dev_db
+    volumes:
+      - pgdata:/var/lib/postgresql/data
 
 volumes:
-  pgdata:
+  pgdata:    
