@@ -29,7 +29,7 @@ DEBUG = True
 #
 
 CSRF_TRUSTED_ORIGINS = ['https://git.heroku.com/online-shop-api-v2.git',
-    'https://online-shop-api-v2.herokuapp.com/admin/','online-shop-api-v2.herokuapp.com', 
+    'https://online-shop-api-v2.herokuapp.com/admin/', 
     'https://online-shop-api-v2.herokuapp.com/','https://*.127.0.0.1', 
     'https://*.herokuapp.com/']
 
