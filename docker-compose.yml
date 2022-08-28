@@ -17,9 +17,9 @@ services:
     image: postgres
     container_name: pgdb
     environment:
-      - POSTGRES_USER=bookstore_dev
-      - POSTGRES_PASSWORD=bookstore_dev
-      - POSTGRES_DB=bookstore_dev_db
+      - POSTGRES_USER=pynsotbcxdtbzu
+      - POSTGRES_PASSWORD=9620659a9c5aaaf5e5d9cc7573b4d2ddc316f54c7bff34a4f08f85ddc23b1d34
+      - POSTGRES_DB=d6nv9q6onups70
     volumes:
       - pgdata:/var/lib/postgresql/data
 
