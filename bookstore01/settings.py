@@ -88,7 +88,7 @@ WSGI_APPLICATION = 'bookstore01.wsgi.application'
 
 DATABASES = {
     "default": {
-        "ENGINE": 'django.db.backends.postgresql_psycopg2'
+        "ENGINE": 'django.db.backends.postgresql_psycopg2',
         "NAME": 'd6nv9q6onups70',
         "USER": 'pynsotbcxdtbzu',
         "PASSWORD": '9620659a9c5aaaf5e5d9cc7573b4d2ddc316f54c7bff34a4f08f85ddc23b1d34',
