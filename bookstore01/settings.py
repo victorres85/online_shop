@@ -88,12 +88,12 @@ WSGI_APPLICATION = 'bookstore01.wsgi.application'
 
 DATABASES = {
     "default": {
-        "ENGINE": os.environ.get("SQL_ENGINE", "django.db.backends.sqlite3"),
-        "NAME": os.environ.get("SQL_DATABASE", BASE_DIR / "db.sqlite3"),
-        "USER": os.environ.get("SQL_USER", "user"),
-        "PASSWORD": os.environ.get("SQL_PASSWORD", "password"),
-        "HOST": os.environ.get("SQL_HOST", "localhost"),
-        "PORT": os.environ.get("SQL_PORT", "5432"),
+        "ENGINE": 'django.db.backends.postgresql_psycopg2'
+        "NAME": 'd2hbe6c0dm5o9b',
+        "USER": 'xqzzyaekvpjahy',
+        "PASSWORD": '9d2004f1c9473d8fff652b9a448ba7cffa2608aa8273fbaa0f6132ae66b236ed',
+        "HOST": 'ec2-3-223-242-224.compute-1.amazonaws.com',
+        "PORT": "5432",
     }
 }
 
