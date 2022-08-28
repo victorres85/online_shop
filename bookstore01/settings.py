@@ -28,6 +28,8 @@ DEBUG = True
 
 #
 
+CSRF_TRUSTED_ORIGINS = ['https://online-shop-api-v2.herokuapp.com/admin/','online-shop-api-v2.herokuapp.com', 'https://online-shop-api-v2.herokuapp.com/','https://*.127.0.0.1']
+
 ALLOWED_HOSTS = ['online-shop-api-v2.herokuapp.com', 'localhost', '127.0.0.1', 'online-shop-api-v2.herokuapp.com',
                  'https://online-shop-api-v2.herokuapp.com/', 'online-shop-api-v2.herokuapp.com']
 
@@ -96,8 +98,6 @@ DATABASES = {
         "PORT": "5432",
     }
 }
-
-CSRF_TRUSTED_ORIGINS = ['https://online-shop-api-v2.herokuapp.com/admin/','online-shop-api-v2.herokuapp.com', 'https://online-shop-api-v2.herokuapp.com/','https://*.127.0.0.1']
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
