@@ -28,7 +28,7 @@ DEBUG = True
 
 #
 
-CSRF_TRUSTED_ORIGINS = ['https://online-shop-api-v2.herokuapp.com/admin/','online-shop-api-v2.herokuapp.com', 'https://online-shop-api-v2.herokuapp.com/','https://*.127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://git.heroku.com/online-shop-api-v2.git','https://online-shop-api-v2.herokuapp.com/admin/','online-shop-api-v2.herokuapp.com', 'https://online-shop-api-v2.herokuapp.com/','https://*.127.0.0.1']
 
 ALLOWED_HOSTS = ['online-shop-api-v2.herokuapp.com', 'localhost', '127.0.0.1', 'online-shop-api-v2.herokuapp.com',
                  'https://online-shop-api-v2.herokuapp.com/', 'online-shop-api-v2.herokuapp.com']
